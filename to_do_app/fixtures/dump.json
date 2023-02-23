@@ -1,1 +1,67 @@
 [
+{
+  "model": "to_do_app.todoparagraph",
+  "pk": 1,
+  "fields": {
+    "title": "11111",
+    "description": "kfmdvc",
+    "status": "in_process",
+    "completion_date": "2023-02-15",
+    "is_deleted": true,
+    "deleted_at": "2023-02-23T20:28:59.176Z",
+    "updated_at": "2023-02-23"
+  }
+},
+{
+  "model": "to_do_app.todoparagraph",
+  "pk": 2,
+  "fields": {
+    "title": "123456",
+    "description": "dfcdf",
+    "status": "new",
+    "completion_date": "2023-02-15",
+    "is_deleted": false,
+    "deleted_at": null,
+    "updated_at": "2023-02-23"
+  }
+},
+{
+  "model": "to_do_app.todoparagraph",
+  "pk": 3,
+  "fields": {
+    "title": "qq",
+    "description": "qqqqqq",
+    "status": "complete",
+    "completion_date": "2023-02-15",
+    "is_deleted": false,
+    "deleted_at": null,
+    "updated_at": "2023-02-23"
+  }
+},
+{
+  "model": "to_do_app.todoparagraph",
+  "pk": 4,
+  "fields": {
+    "title": "Сходить на массаж",
+    "description": "7 горю больница, по назначению терапевта. Записаться через дамумед",
+    "status": "new",
+    "completion_date": "2023-02-25",
+    "is_deleted": false,
+    "deleted_at": null,
+    "updated_at": "2023-02-23"
+  }
+},
+{
+  "model": "to_do_app.todoparagraph",
+  "pk": 5,
+  "fields": {
+    "title": "Созвон с коллегой",
+    "description": "Обсуждение предыдущих акций",
+    "status": "complete",
+    "completion_date": "2023-02-15",
+    "is_deleted": false,
+    "deleted_at": null,
+    "updated_at": "2023-02-23"
+  }
+}
+]
