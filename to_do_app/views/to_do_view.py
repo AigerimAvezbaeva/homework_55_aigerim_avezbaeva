@@ -26,7 +26,10 @@ def paragraph_view(request, pk):
 def update_toDo(request, pk):
     errors = {}
     paragraph = get_object_or_404(ToDoParagraph, pk=pk)
+    form = ToDoForm(instance=paragraph)
+    print(form)
     if request.method == 'POST':
+        form = ToDoForm(request.POST, instance=paragraph)
         if not request.POST.get('title'):
             errors['title'] = 'Данное поле обязательно к заполнению'
         paragraph.title = request.POST.get('title')
@@ -36,12 +39,14 @@ def update_toDo(request, pk):
         if errors:
             return render(request, 'to_do_update.html', context={
                 'paragraph': paragraph,
+                'form': form,
                 'errors': errors
             })
-        paragraph.save()
+        form.save()
         return redirect('to_do_paragraph.html', pk=paragraph.pk)
     return render(request, 'to_do_update.html', context={
-        'paragraph': paragraph
+        'paragraph': paragraph,
+        'form': form
     })
 
 
