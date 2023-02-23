@@ -2,16 +2,21 @@
 {% block title %}
 To Do Paragraph
 {% endblock %}
-
+{% block menu %}
+    <a href="{% url 'add_paragraph' %}">Добавить новую</a>
+    <a href="{% url 'todo_update' paragraph.pk %}">Редактировать</a>
+    <a href="{% url 'delete_par' paragraph.pk %}">Удалить</a>
+{% endblock %}
 {% block content %}
     <main class="main">
     <div class="container">
-    <div class="card">
-        <h3 class="par">{{ paragraph.title }}
+    <div class="card task">
+        <h1 class="par">{{ paragraph.title }}</h1>
             <br> <b class="par-title"> Описание задачи: {{ paragraph.description }}</b>
             <br> <b class="par-title"> Статус задачи: {{ paragraph.status }}</b>
-        </h3>
-        <p><a href="/" class="par">На главную</a></p>
+            <br> <b class="par-title"> Плановая дата завершения: {{ paragraph.completion_date }}</b>
+
     </div>
 
 {% endblock %}
+

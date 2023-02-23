@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% block title %}
-Article Create
+Task Create
 {% endblock %}
 {% block content %}
 <main class="main">
     <div class="container">
     <div class="card">
   <form action="{% url 'add_paragraph' %}" method="post">
-        {% include 'partial/to_do_form.html' with button_text='Create' %}
+        {% include 'partial/to_do_form.html' with button_text='Создать' %}
   </form>
 </div>
 </div>

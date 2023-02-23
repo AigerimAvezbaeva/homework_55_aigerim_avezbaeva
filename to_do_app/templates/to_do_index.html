@@ -10,18 +10,20 @@ To Do List
 <div class="wrapper">
     <main class="main">
     <div class="container">
-    <div class="card">
+
         {% if paragraphs %}
         {% for paragraph in paragraphs %}
+        <div class="card">
             <h3 class="par">{{ paragraph.title }}  <b class="par-title">{{ paragraph.status }}</b></h3>
-        <p><a href="{% url 'paragraph_detail' paragraph.pk %}" class="parlink">Подробнее..</a></p>
-        <p><a href="{% url 'delete_par' paragraph.pk %}" class="parlink">Удалить</a></p>
+        <p class="link-task"><a href="{% url 'paragraph_detail' paragraph.pk %}" class="parlink">Подробнее..</a></p>
+        <p class="link-task"><a href="{% url 'delete_par' paragraph.pk %}" class="parlink">Удалить</a></p>
+            </div>
         {%endfor%}
         {% else %}
         <h3 class="par">Нет задач. Необходимо добавить.</h3>
 
         {%endif%}
-        </div>
+
     </div>
     </main>
 </div>
