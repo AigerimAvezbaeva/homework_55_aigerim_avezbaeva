@@ -8,21 +8,40 @@ body{
     color: black;
     margin-top: 60px;
 }
-
+.container{
+    margin: 0 auto;
+    width: 1175px;
+}
 header{
     display: block;
     height: 60px;
     text-align:center;
 }
 .par{
-    margin: 20px;
-    padding: 20px;
-    padding-left: 50px;
     color:#505050;
+    padding:20px 0;
 }
-.parlink{
+.qwerty{
+    padding:20px 0;
+}
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.alert{color:red}
+.form-group{margin: 5px 0;}
+.form-group input{width:280px;height: 25px;}
 
+.parlink, .link-task{
+    padding: 10 0 0 0;
     color:#505050;
+    font-size: 15px;
+}
+.pro{
+    margin:20px 0;
+}
+.link-task{
+    margin: 20px 0;
 }
 .textarea{
     width: 50%;
@@ -32,20 +51,22 @@ header{
     width:150px
     height: 30px;
 }
-.card{
-    margin: 15px;
-    padding: 10px;
-    width:80%;
-    border: 5px solid white;
-    border-radius: 3px;
-    align: center;
-}
 
-.par-title{
-    margin-left:10px;
-    padding: 3px;
-    border: 1px solid white;
-    border-radius: 3px;
+.card{
+    float: left;
+    margin: 10px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    padding: 21px 14px 0;
+    margin-bottom: -1px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    height: 250px;
+    max-width: 250px;
+    width: 250px;
+}
+.task{
+    border: 0;
 }
 .main-header{
     width: 100%;
@@ -54,10 +75,6 @@ header{
 
 }
 
-.container{
-    margin: 0 auto;
-    width: 1175px;
-}
 .navbar {
     display: block;
     background: #54865d;
@@ -65,7 +82,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    font-size: 0;
+    font-size: 30;
     box-sizing: border-box;
     padding: 7px 30px;
 }
@@ -141,32 +158,17 @@ header{
     display: flex;
     text-align: right;
 }
-.footer{
-    max-width: 100%
-    margin-top:100px;
-    background-color: #505050;
 
-    height:60px;
-}
-.copyright{
-    font-size: 12px;
-    padding-top: 20px;
-}
-.white-text{
-    color: #fff;
-    line-height: 24px;
-}
 .form_row{
     padding:15px;
     width:80%;
 }
-.footer{
-    bottom: 0;
-    height: 80px;
-    background-color: black;
+.submit-button{
+    background-color: #6b7dff;
+    padding: 4px;
+    margin-left: -28px;
+    border: 1px;
+    color: #fffee8;
+    border-radius: 3px;
 }
-.copiright{
-    color: #fff;
-    font-size: 14px;
-    padding: 30px 0 30px 0;
-}
+
