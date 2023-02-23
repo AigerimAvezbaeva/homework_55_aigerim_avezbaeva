@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}Blog {% endblock %}</title>
+</head>
+<body>
+<div class="container">
+<nav class="navbar">
+    <div class="container">
+        <ul class="menu">
+        <li>
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li>
+            {% block menu %} {% endblock %}
+        </li>
+        </ul>
+    </div>
+</nav>
+</div>
+{% block content %} {% endblock %}
+<footer class="footer">
+    <div class="container">
+<p class="copyright white-text">Copyright 2023 Attractor</p>
+</div>
+</footer>
+</body>
+</html>

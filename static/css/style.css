@@ -1,0 +1,172 @@
+*{
+    font-family: 'Arial', san-serif;
+    margin: 0 auto;
+}
+body{
+    height:100%;
+    font-family: Arial san-serif;
+    color: black;
+    margin-top: 60px;
+}
+
+header{
+    display: block;
+    height: 60px;
+    text-align:center;
+}
+.par{
+    margin: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    color:#505050;
+}
+.parlink{
+
+    color:#505050;
+}
+.textarea{
+    width: 50%;
+    height: 40px;
+}
+.user_input{
+    width:150px
+    height: 30px;
+}
+.card{
+    margin: 15px;
+    padding: 10px;
+    width:80%;
+    border: 5px solid white;
+    border-radius: 3px;
+    align: center;
+}
+
+.par-title{
+    margin-left:10px;
+    padding: 3px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.main-header{
+    width: 100%;
+    background-color: #775ba2;
+    position: relative;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 1175px;
+}
+.navbar {
+    display: block;
+    background: #54865d;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 7px 30px;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fffee8;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 15px;
+}
+
+.menu a:hover {
+    color: #ffc122;
+    text-decoration: underline;
+}.navbar {
+    display: block;
+    background: #6a7dff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 7px 30px;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fffee8;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 15px;
+}
+
+.menu a:hover {
+    color: #ffc122;
+    text-decoration: underline;
+}
+.nav{
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    padding: 10px;
+    display: flex;
+    text-align: right;
+}
+.footer{
+    max-width: 100%
+    margin-top:100px;
+    background-color: #505050;
+
+    height:60px;
+}
+.copyright{
+    font-size: 12px;
+    padding-top: 20px;
+}
+.white-text{
+    color: #fff;
+    line-height: 24px;
+}
+.form_row{
+    padding:15px;
+    width:80%;
+}
+.footer{
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+}
+.copiright{
+    color: #fff;
+    font-size: 14px;
+    padding: 30px 0 30px 0;
+}
