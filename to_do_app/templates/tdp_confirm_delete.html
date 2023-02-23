@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+Confirm delete
+{% endblock %}
+{% block menu %}
+<a href="{% url 'add_paragraph' %}">Add ToDo</a>
+<a href="{% url 'todo_update' paragraph.pk %}">Update ToDo</a>
+{% endblock %}
+{% block content %}
+
+<div class="wrapper">
+    <main class="main">
+        <div class="container">
+            <div class="card task">
+                <h2 class="qwerty">Вы точно хотите удалить данную задачу?</h2>
+                <div></div>
+                <h3 class="par">{{ paragraph.title }}
+                    <b class="par-title">{{ paragraph.status }}</b>
+                </h3>
+                <form action="{% url 'confirm_delete' paragraph.pk %}" method="POST">
+                    {% csrf_token %}
+                    <div></div>
+                    <p><input type="submit" value="Удалить" class="parlink pro"></p>
+                    <p><a href="{% url 'index' %}" class="parlink pro">Отмена</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock %}
+
