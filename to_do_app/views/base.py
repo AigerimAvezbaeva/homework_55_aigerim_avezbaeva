@@ -5,7 +5,7 @@ from to_do_app.models import ToDoParagraph
 
 
 def to_do_view(request: WSGIRequest):
-    paragraphs = ToDoParagraph.objects.all()
+    paragraphs = ToDoParagraph.objects.exclude(is_deleted=True)
     context = {
         'paragraphs': paragraphs
     }
