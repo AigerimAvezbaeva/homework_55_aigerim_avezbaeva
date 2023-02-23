@@ -7,32 +7,7 @@ Article Create
     <div class="container">
     <div class="card">
   <form action="{% url 'add_paragraph' %}" method="post">
-    {% csrf_token %}
-    <div class="form_row">
-      <label for="title" class="par">Задача</label>
-        <textarea class="textarea" id="title" name="title"></textarea>
-    </div>
-    <div class="form_row">
-      <label for="description" class="par">Описание</label>
-        <textarea class="textarea" id="description" name="description" class="par-description"></textarea>
-    </div>
-    <div class="form_row">
-      <label for="status" class="par">Статус</label>
-      <select id="status" name="status" class="user_input" required>
-          <option value="new" >Новая</option>
-          <option value="in_process" >В процессе</option>
-          <option value="complete" >Завершена</option>
-      </select>
-    </div>
-     <div class="form_row">
-         <label for="completion_date" class="par">Дата выполнения</label>
-        <input id="completion_date" max="2023-12-31" min="2023-01-01"
-               name="completion_date"
-               required=false type="date">
-     </div>
-    <div class="form_row">
-      <input type="submit">
-    </div>
+        {% include 'partial/to_do_form.html' with button_text='Create' %}
   </form>
 </div>
 </div>
